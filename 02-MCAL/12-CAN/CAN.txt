@@ -1,0 +1,18 @@
+Initialization:
+1) exit SLEEP mode by clearing SLEEP bit in MCR
+2) enter INIT mode by setting INRQ bit in MCR
+3) loop until INAK bit is set in MSR
+4) refer to TEST modes
+5) select TRANSMIT PRIORITY in MCR 
+6) select Nonautomatic retransmission mode
+7) ENABLE of DISABLE Time triggered communication mode
+8) ENABLE of DISABLE Receive FIFO locked mode
+9) 
+10)clear INRQ bit in MCR to enter NORMAL mode
+11)loop until INAK bit is cleared in MSR
+
+
+TEST modes:
+1) SILENT mode:	set SILM bit in BTR
+2) LOOP BACK mode: set LBKM bit in BTR
+3) TWO modes: set SILM & LBKM bits in BTR

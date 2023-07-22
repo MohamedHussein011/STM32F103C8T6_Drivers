@@ -1,0 +1,3 @@
+__asm volatile ("cpsid i" : : : "memory");	//to disable the interrupts
+
+__asm volatile ("cpsie i" : : : "memory");	////to enable the interrupts
